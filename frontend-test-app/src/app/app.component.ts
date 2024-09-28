@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import Producto from './Model/entities/producto';
 import { ProductoService } from './services/producto-service.service';
+import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { error } from 'console';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -8,7 +8,7 @@ import  Producto  from '../Model/entities/producto';
 })
 
 export class ProductoService {
-  private apiUrl = 'http://localhost:5049/api/producto';  // Cambia por la URL correcta de tu API
+  private apiUrl = 'https://localhost:7225/api/producto';  // Cambia por la URL correcta de tu API
 
   constructor(private http: HttpClient) { }
 
